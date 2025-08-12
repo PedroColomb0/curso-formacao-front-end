@@ -1,0 +1,22 @@
+O **JavaScript** é uma linguagem de programação que serve para tornar as páginas da web dinâmicas e interativas.
+ Pense em uma página como uma casa:
+
+* O **HTML** é a estrutura da casa, com paredes e telhado.
+* O **CSS** é a decoração, as cores das paredes, os móveis e o estilo.
+* O **JavaScript** é a parte que faz tudo funcionar e se mover, como acender e apagar as luzes, abrir e fechar a porta ou ligar a televisão.
+
+Ele é o motor por trás da maioria das interações que você tem na internet.
+
+---
+
+### O que você pode fazer com JavaScript?
+
+Com JavaScript, é possível:
+
+* **Criar animações:** Carrosséis de imagens, menus que se abrem e fecham, gráficos animados e efeitos de transição.
+* **Validar formulários:** Ele pode verificar se você preencheu todos os campos de um formulário de cadastro antes de enviá-lo, como um email ou uma senha.
+* **Atualizar conteúdo dinamicamente:** Você já notou que, ao rolar uma página, o conteúdo continua carregando sem que você precise recarregar a página? Isso é o JavaScript em ação.
+* **Desenvolver jogos:** A linguagem é usada para criar jogos simples e complexos diretamente no navegador.
+* **Criar aplicativos:** Com o avanço de tecnologias como o Node.js, o JavaScript também passou a ser usado para criar aplicativos para servidores (back-end), aplicativos de celular e até softwares para desktop.
+
+Em resumo, o JavaScript é o que transforma uma página estática em uma experiência rica e cheia de funcionalidades.

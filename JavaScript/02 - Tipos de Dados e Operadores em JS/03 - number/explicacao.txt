@@ -1,0 +1,8 @@
+Podemos usar o typeof para saber o tipo de dados exemplo -
+
+Int - 2
+Float - 2.0
+
+Sempre representando com ponto o flutuante.
+
+console.log(typeof 2)

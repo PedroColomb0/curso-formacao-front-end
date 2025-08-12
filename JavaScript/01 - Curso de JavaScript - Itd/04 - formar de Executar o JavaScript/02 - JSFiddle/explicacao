@@ -1,0 +1,36 @@
+JSFiddle é uma ferramenta online e gratuita, muito popular entre desenvolvedores web, conhecida como um "playground" de código.
+
+
+Em poucas palavras, é um site que oferece um ambiente de desenvolvimento simples e direto no seu navegador para você escrever
+ e testar códigos de front-end: HTML, CSS e JavaScript.
+
+Como Funciona?
+
+A interface do JSFiddle é tipicamente dividida em quatro painéis:
+
+    HTML: Onde você escreve a estrutura da sua página (títulos, parágrafos, divs, etc.).
+
+    CSS: Onde você escreve as regras de estilo para seus elementos (cores, tamanhos, posicionamento, etc.).
+
+    JavaScript: Onde você escreve a lógica para tornar sua página interativa.
+
+    Result (Resultado): Um painel que mostra o resultado ao vivo do seu código combinado, como se fosse uma página da web real. Ele é atualizado automaticamente conforme você digita.
+
+Para que serve o JSFiddle?
+
+Ele é extremamente útil para várias situações:
+
+    Testar Ideias Rapidamente: Quer ver como um componente visual ou uma animação funciona? Em vez de criar arquivos 
+    no seu computador, você pode abrir o JSFiddle e prototipar em segundos.
+
+    Aprender e Ensinar: É uma ótima ferramenta para praticar novos conceitos de programação. Muitos tutoriais e cursos 
+    online usam o JSFiddle para demonstrar exemplos de código que os alunos podem editar e ver o resultado na hora.
+
+    Compartilhar Código e Pedir Ajuda: Se você está com um problema no seu código, pode recriar o problema de forma 
+    isolada no JSFiddle e compartilhar o link em fóruns como o Stack Overflow. Isso permite que outras pessoas vejam e rodem seu código para te ajudar a encontrar a solução.
+
+    Reproduzir Bugs: Facilita a criação de um exemplo mínimo e funcional que demonstra um bug, tornando mais fácil 
+    para as equipes de desenvolvimento entenderem e corrigirem o problema.
+
+Em resumo, pense no JSFiddle como um caderno de rascunhos digital para desenvolvimento web: um lugar rápido, prático
+ e compartilhável para experimentar suas ideias de código sem a necessidade de configurar todo um ambiente de desenvolvimento local no seu computador.

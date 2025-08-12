@@ -1,0 +1,62 @@
+Interpolacao - Ela possobilita escrever tudo na mesma string,mas o objetivo final é poder executar o JavaScript
+
+Tem que ser escrita em crases e tem que utilizar $(cifrao){} Abre e fecha chaves. Sempre crase.
+
+console.log("Pedro" + "2")
+console.log(`A soma de 2 + 2 é ${ 2 + 2}`)
+
+
+-- // ---
+
+Interpolação em JavaScript: Uma Maneira Simples e Clara de Construir Strings
+
+Em JavaScript, a interpolação de strings é um recurso que permite criar strings de forma mais dinâmica e legível, inserindo variáveis ou expressões diretamente dentro do texto. Isso é feito utilizando um recurso chamado **Template Literals** (ou Template Strings).
+
+Em resumo, em vez de quebrar a string e usar o sinal de `+` para juntar (concatenar) texto e variáveis, você pode escrever tudo de uma vez de uma maneira muito mais intuitiva.
+
+A sintaxe é simples:
+
+1.  **Use a crase (`     `)** em vez de aspas simples (' ') ou duplas (" ") para delimitar a string.
+2.  **Coloque a variável ou expressão** que você quer inserir dentro de `${}`.
+
+Exemplo Prático
+
+Imagine que você tem o nome e a idade de um usuário e quer criar uma saudação.
+
+**Maneira antiga (com concatenação):**
+
+```javascript
+const nome = "Maria";
+const idade = 30;
+
+const saudacaoAntiga = "Olá, meu nome é " + nome + " e eu tenho " + idade + " anos.";
+console.log(saudacaoAntiga);
+```
+
+**Maneira moderna (com interpolação):**
+
+```javascript
+const nome = "Maria";
+const idade = 30;
+
+const saudacaoNova = `Olá, meu nome é ${nome} e eu tenho ${idade} anos.`;
+console.log(saudacaoNova);
+```
+
+Ambos os exemplos produzirão a mesma saída no console:
+
+```
+Olá, meu nome é Maria e eu tenho 30 anos.
+```
+
+Como você pode ver, a versão com interpolação é mais limpa, fácil de ler e menos propensa a erros com espaços ou aspas. Além de variáveis, você também pode incluir expressões matemáticas ou chamadas de funções dentro do `${}`.
+
+**Exemplo com expressão:**
+
+```javascript
+const preco = 50;
+const quantidade = 3;
+
+const mensagem = `O valor total da sua compra é R$ ${preco * quantidade}.`;
+console.log(mensagem); // Saída: O valor total da sua compra é R$ 150.
+```

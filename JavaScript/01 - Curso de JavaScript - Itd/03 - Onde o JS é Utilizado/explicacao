@@ -1,0 +1,17 @@
+JavaScript serve para deixar a pagina viva
+
+DOM (Document Object Model) - Copia do HTML so que no objeto javaScript, por meio dele a gente pode atrelar eventos (click, mexer o mouse)
+que ele vai começar a disparar gatilhos que é a onde podemos começar a alterar esses nós do DOM, que são os elementos que
+temos no nosso html, exemplo: podemos dar um click aqui e deixar o titulo vermelho. 
+
+O DOM é um "mapa" da sua página HTML que o JavaScript usa para ler e modificar o conteúdo da página dinamicamente, sem precisar recarregá-la.
+
+Pense na sua página HTML como uma casa de Lego. O DOM é a planta baixa dessa casa, mostrando exatamente onde cada peça (cada elemento) está.
+O JavaScript é a sua mão, que olha a planta (o DOM) para encontrar uma peça específica e trocá-la, mudá-la de cor ou remover.
+
+Exemplo Prático: Mudar um Título
+
+Imagine que sua página HTML tem este título:
+HTML
+
+<h1 id="saudacao">Olá, Mundo!</h1>

@@ -1,0 +1,1 @@
+NaN (Not a Number) - Quando tentamos somar 2 coisas que não são números, ou uma coisa que é numero com uma coisa que é.

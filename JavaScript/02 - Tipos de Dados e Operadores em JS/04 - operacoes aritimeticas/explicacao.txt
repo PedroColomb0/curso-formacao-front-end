@@ -1,0 +1,38 @@
+Ordem Matematica - 
+
+A ordem para resolver qualquer cálculo é PÊMDAS:
+
+    Parênteses
+
+    Expoentes
+
+    Multiplicação e Divisão (o que vier primeiro)
+
+    Adição e Subtração (o que vier primeiro)
+
+Exemplo Rápido:
+
+10 + 5 * 2
+
+    Primeiro a Multiplicação: 5 * 2 = 10
+
+    Depois a Adição: 10 + 10 = 20
+
+Resultado: 20 (e não 30).
+
+outro exemplo com parenteses 
+
+Um exemplo mais simples com parênteses seria:
+(8+2)×3
+
+Para resolver, siga a ordem das operações:
+
+    Parênteses: Resolva a soma dentro dos parênteses primeiro.
+    8+2=10
+
+    Multiplicação: Agora, use o resultado e faça a multiplicação.
+    10×3=30
+
+O resultado final é 30.
+
+
