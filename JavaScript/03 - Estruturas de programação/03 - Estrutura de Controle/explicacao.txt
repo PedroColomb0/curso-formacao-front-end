@@ -1,0 +1,21 @@
+const idade = 12
+
+if(idade === 12){
+    console.log("Idade certa!")
+}else{
+    console.log("Idade Errada!")
+}
+
+
+// usando elseif
+
+
+const nome = "Pedro"
+
+if(nome === "Maria"){
+    console.log("O nome é 1")
+}else if(nome === "Gabriel"){
+    console.log("O nome é 2")
+}else{
+    console.log("o nome é 3 Pedro")
+}

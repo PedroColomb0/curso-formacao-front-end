@@ -1,0 +1,15 @@
+O do-while é um laço de repetição que primeiro executa o bloco de código uma vez e só depois testa a 
+condição. Se a condição for verdadeira, ele continua executando.
+
+Como funciona:
+
+Executa o código dentro do laço (pelo menos uma vez).
+
+Verifica a condição.
+
+Se a condição for verdadeira, volta para o passo 1.
+
+Se a condição for falsa, o laço é encerrado.
+
+Ponto-chave: O código dentro do do-while é garantido para ser executado pelo menos uma vez, 
+não importa o resultado da condição.
