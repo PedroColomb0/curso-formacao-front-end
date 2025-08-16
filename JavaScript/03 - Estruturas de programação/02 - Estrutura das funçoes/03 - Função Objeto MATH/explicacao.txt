@@ -1,0 +1,7 @@
+função é um bloco de código que pode ser reaproveitado ao longo do nosso programa.
+
+O que é uma Função?
+
+Pense em uma função como uma "máquina" pequena e reutilizável dentro do seu código.
+Você dá um nome a essa máquina, ensina a ela uma tarefa específica e,x
+sempre que precisar que essa tarefa seja feita, você simplesmente "chama" a máquina pelo nome.

@@ -1,0 +1,60 @@
+# Função -
+
+Função: Uma Ação
+Pense em uma função como um liquidificador. Você coloca ingredientes (dados de entrada, chamados parâmetros), 
+ele executa uma ação (bater) e te devolve um resultado (a vitamina).
+
+É um bloco de código que realiza uma tarefa específica e pode ser reutilizado várias vezes.
+
+Exemplo (em JavaScript):
+
+JavaScript
+
+// Criando a função que soma dois números
+function somar(a, b) {
+  return a + b;
+}
+
+// Usando a função
+let resultado = somar(5, 3); // O resultado será 8
+console.log(resultado);
+
+---------------- // ------------------------------
+
+# Objeto -
+
+
+O que é um Objeto? (Resumido)
+
+Objeto é um pacote que guarda as características e as ações de uma única coisa.
+
+Imagine um objeto como uma "gaveta" que guarda informações e ações sobre uma única coisa do mundo real 
+(como uma pessoa, um carro, um produto).
+
+Essa "gaveta" tem duas coisas dentro:
+
+1. Propriedades: São as características, os dados.
+(Ex: o nome da pessoa, a idade dela).
+
+2. Métodos: São as ações que essa coisa pode fazer.
+(Ex: a pessoa pode falar()).
+
+Em resumo: Um objeto agrupa variáveis (propriedades) e funções (métodos) em um só lugar, de forma organizada.
+
+--- Exemplo em JavaScript ---
+
+let pessoa = {
+  nome: "Carlos",
+  idade: 30,
+  profissao: "Desenvolvedor",
+
+  apresentar: function() {
+    console.log("Olá! Meu nome é " + this.nome + " e eu tenho " + this.idade + " anos.");
+  }
+};
+
+--- Usando o objeto ---
+
+console.log(pessoa.nome);
+
+pessoa.apresentar();
