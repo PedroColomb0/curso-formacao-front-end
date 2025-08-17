@@ -1,0 +1,51 @@
+Funcionalidade -> Pode usar uma função dentro de uma função
+
+Closure é quando uma função "Lembra" seu escopo léxico, mesmo quando a função é executada fora dese escopo léxico.
+
+Escopo léxico -> é o escopo onde a função foi definida, a função foi fisicamente definida em qual local do seu código?
+ Esse local onde a função foi definida é o escopo dela
+
+
+
+ tipo.
+
+
+
+ # Guia Definitivo: Entendendo Closures em JavaScript
+
+## O Ponto de Partida: A Necessidade de "Lembrar"
+
+A ideia toda começa com uma necessidade simples que você mesmo descreveu perfeitamente:
+
+> "Às vezes, eu quero utilizar uma função, só que eu quero meio que lembrar a última coisa que eu fiz ou o último 
+valor que eu usei. Quero que ela não apague/resete, mas que guarde na memória o que ela fez."
+
+Essa é a melhor definição prática do *porquê* precisamos de closures.
+
+---
+
+### Parte 1: O Problema - Por Que Funções Normais "Esquecem"?
+
+Por padrão, uma função em JavaScript tem uma memória de curto prazo, como uma lousa mágica que se apaga sozinha.
+
+1.  **CHAMADA:** Você chama a função. O JavaScript entrega a ela uma lousa em branco.
+2.  **EXECUÇÃO:** A função escreve suas variáveis e cálculos nessa lousa.
+3.  **FIM:** Assim que a função termina, a lousa é **instantaneamente apagada**. Tudo que estava nela some para sempre.
+
+Isso é feito para economizar memória e manter o sistema organizado. Mas é por isso que um contador simples falha:
+
+```javascript
+// A cada chamada, uma lousa nova é usada e depois apagada.
+function tentarContar() {
+  let contador = 0; // Sempre começa do zero em uma lousa nova.
+  contador++;
+  console.log(contador); // Sempre mostrará "1".
+}
+
+
+--////
+
+
+além de podermos saber e usar e lembrar a variavel e ficar segura dentro de uma função podemos fazer isso, que é lembrar
+o estado da função quando a mesma reseta memoria todo final de execução.
+
