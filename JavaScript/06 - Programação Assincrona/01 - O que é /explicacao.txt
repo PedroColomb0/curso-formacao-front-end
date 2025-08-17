@@ -1,0 +1,3 @@
+um loop muito grande as sincronas travao nosso programa, as assincronas nao elas continuam executando conforme vai executando.
+outras coisas. Exemplo enviar um post do facebook, ele deixa nós trabalhar e tals.
+

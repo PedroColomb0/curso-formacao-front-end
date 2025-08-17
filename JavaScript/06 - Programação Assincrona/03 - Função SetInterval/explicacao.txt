@@ -1,0 +1,64 @@
+// =============================================================================
+// == O QUE É O setInterval EM JAVASCRIPT
+// =============================================================================
+
+// ---- Definição Simples ----
+// O `setInterval` é uma função que agenda um trecho de código para ser
+// executado REPETIDAMENTE, em um intervalo de tempo fixo e constante.
+
+// Pense nele como o botão "Soneca" (Snooze) de um despertador, que
+// toca sem parar a cada 5 minutos, até que você o desligue de vez.
+
+
+// ---- Diferença Principal: setTimeout vs. setInterval ----
+// A diferença é a chave para entender os dois:
+//
+// -> setTimeout: Executa UMA VEZ depois de um tempo. (Alarme normal)
+// -> setInterval: Executa REPETIDAMENTE a cada intervalo de tempo. (Alarme no modo Soneca)
+
+
+// ---- Sintaxe ----
+// A sintaxe é exatamente a mesma do setTimeout.
+// let intervalID = setInterval(callback, delay);
+
+// 1. callback: A função que será executada repetidamente.
+// 2. delay:    O intervalo de tempo em MILISSEGUNDOS (ms) entre cada execução.
+// 3. intervalID: (IMPORTANTE!) O setInterval retorna um número de identificação (ID).
+//                Você PRECISA guardar esse ID em uma variável para conseguir
+//                parar o intervalo mais tarde.
+
+
+// ---- Exemplo Prático: Um Contador Simples ----
+
+console.log("Iniciando o contador...");
+
+let contador = 1;
+
+// Guardamos o ID do intervalo na variável 'meuContador'
+const meuContador = setInterval(() => {
+  // Este callback será executado a cada 2 segundos.
+  console.log(`Contagem: ${contador}`);
+  contador++;
+
+  // Precisamos de uma condição para parar o loop infinito.
+  if (contador > 5) {
+    // Quando o contador passar de 5, o intervalo será parado.
+    console.log("Contador parado!");
+    clearInterval(meuContador); // Chamamos a função para parar.
+  }
+}, 2000); // 2000 ms = 2 segundos
+
+
+// ---- Como Parar um Intervalo: clearInterval ----
+// Para parar um `setInterval`, você usa a função `clearInterval()`.
+// Você deve passar para ela o ID que o `setInterval` retornou quando foi criado.
+
+// É CRUCIAL guardar o ID do intervalo em uma variável se você planeja
+// pará-lo em algum momento. Esquecer de parar um intervalo pode causar
+// problemas de performance ou bugs na sua aplicação.
+
+
+// ---- Quando Usar o setInterval? ----
+// - Para criar um relógio digital que atualiza a cada segundo.
+// - Para verificar se há novas mensagens ou notificações em um servidor a cada minuto.
+// - Para criar animações simples que se repetem.

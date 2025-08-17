@@ -4,18 +4,18 @@ Prepare-se para aprender a organizar e manipular dados de forma eficiente com Ar
 
 -----
 
-### **Aula Completa: Organizando Dados com Arrays, Objetos e Métodos**
+### Aula Completa: Organizando Dados com Arrays, Objetos e Métodos
 
 Até agora, guardamos valores em variáveis individuais. Agora, vamos aprender a lidar com coleções de dados.
 
-#### **Parte 1: As Estruturas de Dados Fundamentais**
+#### Parte 1: As Estruturas de Dados Fundamentais
 
-**1. Conhecendo os Arrays**
+1. Conhecendo os Arrays
 
-Um **Array** é uma lista ordenada de valores. Pense nele como uma estante com prateleiras numeradas, onde cada prateleira guarda um item.
+Um Array é uma lista ordenada de valores. Pense nele como uma estante com prateleiras numeradas, onde cada prateleira guarda um item.
 
   * A lista é colocada entre colchetes `[]`.
-  * Cada item na lista é acessado por seu **índice** (posição), que **começa em 0**.
+  * Cada item na lista é acessado por seu índice (posição), que começa em 0.
 
 <!-- end list -->
 
@@ -31,9 +31,9 @@ console.log(frutas[1]); // Banana (segundo item, índice 1)
 console.log("Total de frutas:", frutas.length); // Total de frutas: 3
 ```
 
-**2. Objetos**
+2. Objetos
 
-Um **Objeto** é uma coleção de dados não ordenada, organizada em pares de **chave-valor**. Pense nele como um dicionário ou a ficha de um personagem, onde cada "chave" (como "nome" ou "idade") tem um "valor" associado.
+Um Objeto é uma coleção de dados não ordenada, organizada em pares de chave-valor. Pense nele como um dicionário ou a ficha de um personagem, onde cada "chave" (como "nome" ou "idade") tem um "valor" associado.
 
   * O objeto é colocado entre chaves `{}`.
   * Você acessa os valores usando o nome da chave.
@@ -62,12 +62,12 @@ delete usuario.estaAtivo;
 console.log(usuario); // O objeto não terá mais a chave "estaAtivo"
 ```
 
-**3. Diferença Crucial: Array vs. Objeto**
+3. Diferença Crucial: Array vs. Objeto
 
-  * Use um **Array** quando a **ordem** dos itens importa e você quer uma lista simples (ex: lista de compras, sequência de passos).
-  * Use um **Objeto** quando você precisa **descrever** algo com propriedades nomeadas, e a ordem não importa (ex: características de um produto, dados de um formulário).
+  * Use um Array quando a ordem dos itens importa e você quer uma lista simples (ex: lista de compras, sequência de passos).
+  * Use um Objeto quando você precisa descrever algo com propriedades nomeadas, e a ordem não importa (ex: características de um produto, dados de um formulário).
 
-**4. Mutação**
+4. Mutação
 
 Arrays e Objetos são "mutáveis". Isso significa que, quando você os modifica, você está alterando a estrutura original.
 
@@ -82,13 +82,13 @@ console.log(hobbies); // ["Ler", "Correr", "Cozinhar"] -> O original foi alterad
 
 -----
 
-#### **Parte 2: Métodos para Manipular Arrays e Strings**
+#### Parte 2: Métodos para Manipular Arrays e Strings
 
-**Métodos** são ações que podemos executar sobre os dados.
+Métodos são ações que podemos executar sobre os dados.
 
-**A. Métodos Essenciais de Arrays**
+A. Métodos Essenciais de Arrays
 
-  * **`push()` / `pop()`: Adicionar/Remover no FINAL**
+  * `push()` / `pop()`: Adicionar/Remover no FINAL
 
     ```javascript
     let numeros = [10, 20];
@@ -96,7 +96,7 @@ console.log(hobbies); // ["Ler", "Correr", "Cozinhar"] -> O original foi alterad
     numeros.pop();      // Remove o último item -> [10, 20]
     ```
 
-  * **`unshift()` / `shift()`: Adicionar/Remover no INÍCIO**
+  * `unshift()` / `shift()`: Adicionar/Remover no INÍCIO
 
     ```javascript
     let letras = ['b', 'c'];
@@ -104,7 +104,7 @@ console.log(hobbies); // ["Ler", "Correr", "Cozinhar"] -> O original foi alterad
     letras.shift();      // Remove o primeiro item -> ['b', 'c']
     ```
 
-  * **`indexOf()` / `includes()`: Encontrar Itens**
+  * `indexOf()` / `includes()`: Encontrar Itens
 
     ```javascript
     let nomes = ["Ana", "Bia", "Carlos"];
@@ -112,7 +112,7 @@ console.log(hobbies); // ["Ler", "Correr", "Cozinhar"] -> O original foi alterad
     console.log(nomes.includes("Daniel"));  // Retorna um booleano: false
     ```
 
-  * **`slice()`: Copiar um Pedaço do Array**
+  * `slice()`: Copiar um Pedaço do Array
     Cria um *novo* array, sem modificar o original.
 
     ```javascript
@@ -121,7 +121,7 @@ console.log(hobbies); // ["Ler", "Correr", "Cozinhar"] -> O original foi alterad
     console.log(pedaco); // [2, 3, 4]
     ```
 
-  * **`forEach()`: Executar uma Ação para Cada Item**
+  * `forEach()`: Executar uma Ação para Cada Item
     Uma forma moderna de fazer um loop em um array.
 
     ```javascript
@@ -131,11 +131,11 @@ console.log(hobbies); // ["Ler", "Correr", "Cozinhar"] -> O original foi alterad
     });
     ```
 
-**B. Métodos Úteis de Strings**
+B. Métodos Úteis de Strings
 
-  * **`trim()`:** Remove espaços em branco do início e do fim.
-  * **`split()`:** Divide uma string em um *array* com base em um separador.
-  * **`join()`:** O oposto do `split`. Junta os itens de um *array* em uma *string*.
+  * `trim()`: Remove espaços em branco do início e do fim.
+  * `split()`: Divide uma string em um *array* com base em um separador.
+  * `join()`: O oposto do `split`. Junta os itens de um *array* em uma *string*.
 
 <!-- end list -->
 
@@ -152,11 +152,11 @@ console.log(arrayTags.join(" - ")); // "javascript - html - css"
 
 -----
 
-#### **Parte 3: Sintaxe Moderna e Formatos de Dados**
+#### Parte 3: Sintaxe Moderna e Formatos de Dados
 
-**1. Estrutura `for...of`**
+1. Estrutura `for...of`
 
-Uma maneira simples e legível de percorrer os **valores** de um array.
+Uma maneira simples e legível de percorrer os valores de um array.
 
 ```javascript
 let planetas = ["Mercúrio", "Vênus", "Terra"];
@@ -166,7 +166,7 @@ for (let planeta of planetas) {
 }
 ```
 
-**2. Destructuring (Desestruturação)**
+2. Destructuring (Desestruturação)
 
 Uma sintaxe que permite "desempacotar" valores de arrays ou propriedades de objetos em variáveis distintas.
 
@@ -182,7 +182,7 @@ const [x, y] = coordenadas; // Cria as variáveis 'x' e 'y'
 console.log(`A coordenada x é ${x} e a y é ${y}.`);
 ```
 
-**3. JSON (JavaScript Object Notation)**
+3. JSON (JavaScript Object Notation)
 
 JSON é um formato de texto usado para trocar dados entre sistemas (por exemplo, entre um servidor e um navegador). Sua sintaxe é quase idêntica à dos objetos JavaScript, mas com duas regras principais:
 
@@ -191,8 +191,8 @@ JSON é um formato de texto usado para trocar dados entre sistemas (por exemplo,
 
 <!-- end list -->
 
-  * **`JSON.stringify()`:** Converte um objeto/array JavaScript em uma string JSON.
-  * **`JSON.parse()`:** Converte uma string JSON de volta para um objeto/array JavaScript.
+  * `JSON.stringify()`: Converte um objeto/array JavaScript em uma string JSON.
+  * `JSON.parse()`: Converte uma string JSON de volta para um objeto/array JavaScript.
 
 <!-- end list -->
 

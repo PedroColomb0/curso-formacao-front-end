@@ -1,0 +1,54 @@
+// =============================================================================
+// == O QUE É O setTimeout EM JAVASCRIPT
+// =============================================================================
+
+// ---- Definição Simples ----
+// O `setTimeout` é uma função que agenda um trecho de código (uma função)
+// para ser executado UMA ÚNICA VEZ, após um intervalo de tempo específico.
+
+// Pense nele como programar um alarme: você define o que ele deve fazer
+// e daqui a quanto tempo, e então pode seguir com suas outras tarefas.
+
+
+// ---- Ponto-Chave: Assincronismo ----
+// A característica mais importante do `setTimeout` é que ele é ASSÍNCRONO.
+// Isso significa que ele NÃO PAUSA nem TRAVA a execução do seu programa.
+// Ele simplesmente agenda a tarefa para o futuro e o resto do código
+// continua a ser executado imediatamente.
+
+
+// ---- Sintaxe ----
+// setTimeout(callback, delay);
+
+// 1. callback: É a função que contém o código que você quer executar.
+//              É o "o que fazer".
+//              Ex: () => { console.log("Executou!"); }
+
+// 2. delay: É o tempo de espera em MILISSEGUNDOS (ms) antes de executar o callback.
+//           É o "quanto tempo esperar".
+//           (Lembrete: 1000 ms = 1 segundo)
+
+
+// ---- Exemplo Prático ----
+
+console.log("Passo 1: Início do programa.");
+
+setTimeout(() => {
+  // Este bloco de código é o 'callback'.
+  // Ele só vai rodar após o tempo de 'delay' (3 segundos) ter passado.
+  console.log("Passo 2: Esta mensagem só aparece após 3 segundos.");
+}, 3000); // 3000 ms = 3 segundos
+
+console.log("Passo 3: O programa continua... Ele não ficou esperando o timer para chegar aqui.");
+
+/*
+  SAÍDA ESPERADA NO CONSOLE:
+  ---------------------------
+  Passo 1: Início do programa.
+  Passo 3: O programa continua... Ele não ficou esperando o timer para chegar aqui.
+  (espera 3 segundos...)
+  Passo 2: Esta mensagem só aparece após 3 segundos.
+
+  Isso prova que o programa agendou o Passo 2 e executou o Passo 3 imediatamente,
+  sem ficar bloqueado.
+*/
