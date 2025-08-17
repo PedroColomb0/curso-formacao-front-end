@@ -1,0 +1,101 @@
+ =============================================================================
+ == O QUE SÃO PROMISES EM JAVASCRIPT
+ =============================================================================
+
+ ---- O Problema que as Promises Resolvem: "Callback Hell" ----
+
+ Antes das Promises, para executar tarefas assíncronas em sequência,
+ acabávamos aninhando funções dentro de funções. Isso criava um código
+ difícil de ler e manter, apelidado de "Callback Hell" ou "Pyramid of Doom".
+
+ Exemplo conceitual de como era:
+ tarefa1(() => {
+   tarefa2(() => {
+     tarefa3(() => {
+       console.log("Finalmente, todas as tarefas terminaram!");
+     });
+   });
+ });
+
+ As Promises foram criadas para resolver esse problema, tornando o código
+ assíncrono mais limpo, legível e organizado.
+
+
+ ---- Definição Simples: O que é uma Promise? ----
+
+ Uma Promise (Promessa) é um objeto que representa a eventual conclusão
+ ou falha de uma operação assíncrona.
+
+ Pense nela como um "recibo" que você ganha ao fazer um pedido online:
+ 1. No início, o status do pedido é "Pendente".
+ 2. Se tudo der certo, o status muda para "Realizado" (e você recebe seu produto).
+ 3. Se algo der errado, o status muda para "Rejeitado" (e você recebe um erro).
+
+ Uma Promise sempre estará em um destes três estados:
+ 1. Pending (Pendente): O estado inicial, a operação ainda não terminou.
+ 2. Fulfilled (Realizada/Resolvida): A operação foi concluída com sucesso.
+ 3. Rejected (Rejeitada): A operação falhou.
+
+
+ ---- Como Usar (Consumir) uma Promise ----
+ Para lidar com o resultado de uma Promise, usamos os métodos .then(), .catch() e .finally().
+
+ .then(resultado => { ... }):
+    - É chamado quando a Promise é **Realizada** (sucesso).
+    - O 'resultado' é o valor que a Promise entregou.
+
+ .catch(erro => { ... }):
+    - É chamado quando a Promise é **Rejeitada** (falha).
+    - O 'erro' é a razão da falha.
+
+ .finally(() => { ... }):
+    - É chamado **sempre** ao final, independentemente de sucesso ou falha.
+    - Útil para tarefas de "limpeza", como esconder um ícone de "carregando".
+
+
+ ---- Exemplo Prático: Simulando uma Busca de Dados ----
+
+ 1. Primeiro, criamos uma função que RETORNA uma nova Promise.
+    (Em projetos reais, funções como `fetch()` do navegador já retornam Promises prontas).
+function buscarUsuarioNoBanco() {
+   A Promise recebe uma função com dois parâmetros: resolve e reject.
+  return new Promise((resolve, reject) => {
+    const sucesso = true;  Mude para 'false' para simular um erro.
+
+    console.log("Buscando usuário...");
+
+    setTimeout(() => {
+      if (sucesso) {
+         Se deu tudo certo, chamamos 'resolve' e passamos o resultado.
+        const usuario = { id: 1, nome: "Pedro" };
+        resolve(usuario);
+      } else {
+         Se deu erro, chamamos 'reject' e passamos o erro.
+        reject("Erro 404: Usuário não encontrado.");
+      }
+    }, 2000);  Simula 2 segundos de espera da rede.
+  });
+}
+
+
+ 2. Agora, vamos "consumir" a Promise que a função retorna.
+buscarUsuarioNoBanco()
+  .then(usuarioEncontrado => {
+     Este bloco só executa se a Promise for resolvida (sucesso).
+    console.log("Sucesso! Usuário encontrado:", usuarioEncontrado.nome);
+  })
+  .catch(erro => {
+     Este bloco só executa se a Promise for rejeitada (falha).
+    console.error("Falha na busca:", erro);
+  })
+  .finally(() => {
+     Este bloco executa sempre, não importa o resultado.
+    console.log("Operação de busca finalizada.");
+  });
+
+
+ ---- Vantagens das Promises ----
+ 1. Legibilidade: Evitam o "Callback Hell", permitindo encadear tarefas de forma linear.
+ 2. Tratamento de Erros Centralizado: Um único `.catch()` pode tratar erros de várias
+    operações `.then()` encadeadas.
+ 3. Composição: Permitem combinar várias promises (ex: com `Promise.all()`).
