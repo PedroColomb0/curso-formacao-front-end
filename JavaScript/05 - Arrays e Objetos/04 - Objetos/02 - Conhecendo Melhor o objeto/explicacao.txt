@@ -1,0 +1,3 @@
+Object.keys utilizamos para saber qual as propriedades, o nome das propriedades de um objeto.
+
+Object.entries Utilizamos para saber a chave e o valor que tem nas nossas propriedades de um objeto.

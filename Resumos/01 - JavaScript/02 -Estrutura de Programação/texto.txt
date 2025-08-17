@@ -1,0 +1,205 @@
+Excelente\! Vamos mergulhar na próxima seção do seu curso. Preparei outra aula escrita, seguindo a mesma estrutura didática, para cobrir tudo sobre variáveis, funções básicas e as poderosas estruturas de controle e repetição.
+
+-----
+
+### Aula Completa: Variáveis, Lógica e Repetições em JavaScript
+
+Nesta etapa, vamos aprender a guardar informações, interagir com o usuário e, o mais importante, 
+ensinar nosso programa a tomar decisões e a repetir tarefas.
+
+#### Parte 1: Guardando Valores e Usando Ferramentas Nativas
+
+1. Salvando Valores (Variáveis)
+
+Imagine que você precisa guardar um número ou um texto para usar depois. Para isso, usamos variáveis.
+ Pense numa variável como uma "caixa" com uma etiqueta (o nome da variável) onde você pode guardar um valor.
+
+Em JavaScript moderno, usamos principalmente duas palavras-chave para criar variáveis:
+
+  * `let`: Permite que você crie uma variável cujo valor pode ser alterado depois.
+  * `const`: Cria uma "constante", ou seja, uma variável cujo valor não pode ser alterado depois de definido.
+
+<!-- end list -->
+
+```javascript
+// Exemplo com let (o valor pode mudar)
+let idade = 30;
+console.log(idade); // Mostra 30
+
+idade = 31; // Mudamos o valor
+console.log(idade); // Agora mostra 31
+
+// Exemplo com const (o valor é fixo)
+const nome = "Maria";
+console.log(nome); // Mostra "Maria"
+
+// Se tentarmos mudar, o JavaScript dará um erro!
+// nome = "Ana"; // ISSO CAUSARIA UM ERRO!
+```
+
+2. Aprofundando em Variáveis: Regras e Nomes Reservados
+
+  * Regras para Nomes: Nomes de variáveis não podem começar com números, não podem ter espaços e não podem usar a maioria dos símbolos especiais (exceto `$` e `_`).
+  * Nomes Reservados: Existem palavras que o JavaScript já usa para suas próprias funções (`if`, `for`, `let`, `const`, `function`, etc.). Você não pode usar essas palavras como nomes de variáveis.
+
+3. O Ambiente JavaScript e Funções Nativas
+
+O JavaScript não funciona no vácuo. Ele roda em um "ambiente", que geralmente é o navegador ou o Node.js.
+ Esse ambiente nos fornece um conjunto de ferramentas e funções prontas para usar.
+
+  * Função `alert()`: Mostra uma pequena caixa de alerta na tela do usuário com uma mensagem.
+
+    ```javascript
+    alert("Esta é uma mensagem importante!");
+    ```
+
+  * Função `prompt()`: Mostra uma caixa de diálogo que pede ao usuário para digitar algo. O que o usuário digita é retornado como uma *string*.
+
+    ```javascript
+    let nomeUsuario = prompt("Por favor, digite o seu nome:");
+    alert("Olá, " + nomeUsuario + "!");
+    ```
+
+4. Objetos Prontos: `console` e `Math`
+
+O ambiente também nos dá "objetos", que são como caixas de ferramentas cheias de funções úteis (chamadas de *métodos*).
+
+  * Objeto `console`: É a principal ferramenta do desenvolvedor para depurar e entender o código. O método mais usado é o `log()`, que imprime informações no console do navegador (F12).
+
+    ```javascript
+    let versao = 1.1;
+    console.log("Iniciando o programa...");
+    console.log("A versão atual é:", versao);
+    ```
+
+  * Objeto `Math`: Uma coleção de ferramentas matemáticas.
+
+    ```javascript
+    console.log(Math.max(5, 10, 2));   // Encontra o maior número: 10
+    console.log(Math.round(4.7));      // Arredonda o número: 5
+    console.log(Math.random());        // Gera um número aleatório entre 0 e 1
+    ```
+
+-----
+
+#### Parte 2: Tomando Decisões e Repetindo Ações
+
+1. Estruturas de Controle (Decisão)
+
+São blocos de código que permitem que o programa escolha qual caminho seguir com base em condições
+ (valores booleanos: `true` ou `false`).
+
+  * `if` (Se): Executa um bloco de código se uma condição for verdadeira.
+
+    ```javascript
+    let temperatura = 28;
+
+    if (temperatura > 25) {
+      console.log("Está calor! Hora de ir à praia.");
+    }
+    ```
+
+  * `else` (Senão): Executa um bloco de código se a condição do `if` for falsa.
+
+    ```javascript
+    let temIngresso = false;
+
+    if (temIngresso == true) {
+      console.log("Pode entrar no cinema.");
+    } else {
+      console.log("Você precisa comprar um ingresso primeiro.");
+    }
+    ```
+
+  * `else if` (Senão Se): Permite testar várias condições em sequência.
+
+    ```javascript
+    let nota = 85;
+
+    if (nota >= 90) {
+      console.log("Nota A: Excelente!");
+    } else if (nota >= 80) {
+      console.log("Nota B: Muito bom!");
+    } else if (nota >= 70) {
+      console.log("Nota C: Aprovado.");
+    } else {
+      console.log("Nota F: Reprovado.");
+    }
+    ```
+
+  * `switch`: Uma alternativa ao `if`/`else if` quando você precisa comparar uma única variável com vários valores possíveis.
+
+    ```javascript
+    let diaDaSemana = "quarta";
+
+    switch (diaDaSemana) {
+      case "segunda":
+        console.log("Dia de começar a trabalhar!");
+        break; // O 'break' impede que o código continue executando os outros casos.
+      case "sexta":
+        console.log("Happy hour!");
+        break;
+      default: // O 'default' é executado se nenhum dos casos corresponder.
+        console.log("É um dia normal da semana.");
+    }
+    ```
+
+2. Estruturas de Repetição (Loops)
+
+Permitem executar o mesmo bloco de código várias vezes, até que uma condição de parada seja atingida.
+
+  * `while` (Enquanto): Repete um bloco de código enquanto uma condição for verdadeira.
+
+    ```javascript
+    let contador = 1;
+
+    while (contador <= 5) {
+      console.log("O número atual é " + contador);
+      contador = contador + 1; // Importante! Se não incrementarmos, o loop será infinito.
+    }
+    ```
+
+  * `do...while`: Parecido com o `while`, mas garante que o bloco de código seja executado pelo menos uma vez antes de testar a condição.
+
+    ```javascript
+    let senha;
+
+    do {
+      senha = prompt("Digite a senha (a senha é '123'):");
+    } while (senha !== "123");
+
+    alert("Senha correta!");
+    ```
+
+  * `for`: É a estrutura de repetição mais comum. É compacta e ideal para quando você sabe exatamente quantas vezes quer repetir algo.
+
+    ```javascript
+    // Este loop vai contar de 1 até 10
+    // for (inicialização; condição; incremento)
+    for (let i = 1; i <= 10; i++) {
+      console.log("Contando... " + i);
+    }
+    ```
+
+3. Controlando Loops, Identação e Convenções
+
+  * `break` (Parar): Força a saída imediata de um loop.
+
+  * `continue` (Continuar): Pula a iteração atual do loop e vai para a próxima.
+
+    ```javascript
+    for (let i = 1; i <= 10; i++) {
+      if (i === 3) {
+        continue; // Pula o número 3
+      }
+      if (i === 8) {
+        break; // Para o loop quando chega no 8
+      }
+      console.log(i); // Vai imprimir 1, 2, 4, 5, 6, 7
+    }
+    ```
+
+  * Identação: É o espaçamento no início das linhas de código. Embora o JavaScript funcione sem ela, a identação correta é fundamental para que o código seja legível para seres humanos.
+
+  * Convenção de Nomes: Em JavaScript, a convenção mais comum é a camelCase. A primeira palavra começa com letra minúscula e as palavras seguintes começam com maiúscula. Ex: `nomeCompletoDoUsuario`, `calcularImposto`.
+

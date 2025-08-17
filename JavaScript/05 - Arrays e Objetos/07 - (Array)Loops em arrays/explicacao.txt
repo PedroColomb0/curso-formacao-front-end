@@ -1,0 +1,10 @@
+const users = ["Matheus","João","Pedro","Miguel"]
+
+for(let i = 0; i < users.length; i++){
+  console.log(`Listando o Usuario: ${users[i]}`)
+}
+
+
+podemos assim, fazer um loop na array, a quantidade de itens vai me ajudar a saber quando acaba o loop.
+
+Acessar o item pelo seu indice que é o contador vai deixar dinamico que nesse exemplo de cima é o I
