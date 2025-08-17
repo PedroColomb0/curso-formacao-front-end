@@ -1,0 +1,13 @@
+Em poucas palavras, return é a instrução que uma função usa para enviar um valor de volta para o local onde 
+ela foi chamada.
+
+Pense assim:
+
+Você chama uma função para fazer um cálculo (pede uma informação).
+
+A função faz o trabalho dela.
+
+O return é a resposta que a função te entrega.
+
+Sem return, uma função pode até fazer algo (como mostrar um texto na tela), mas ela não te entrega um resultado que você possa guardar e usar depois.
+

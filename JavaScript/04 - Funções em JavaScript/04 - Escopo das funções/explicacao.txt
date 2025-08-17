@@ -1,0 +1,3 @@
+seria basicamente tipo dentro do escopo {} da função como se fosse uma nova paginade codigo, entao quando vamos 
+definir as variaveis a gnt faz dentro do escopo é como se fosse um arquivo unico tudo dentro não se pega de fora entende
+entao é isso

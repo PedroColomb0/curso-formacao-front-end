@@ -1,0 +1,25 @@
+// Arrow Function
+
+// Função Anonima (Precisa estar dentro de uma variavel)
+
+const testeArrow = () => {
+  console.log("Está é uma Arrow Funcion")
+}
+
+testeArrow()
+
+// Agora passando parametro
+
+const parOuImpar = (n) => {
+  if(n % 2 === 0){
+    console.log("Par")
+    return
+  }
+
+  console.log("Impar")
+}
+
+
+parOuImpar(2)
+
+// No contexto geral elas usam da mesma forma.

@@ -1,0 +1,11 @@
+Escopo Global (O Mundo lá fora): Tudo que você cria aqui (variáveis, etc.) pode ser acessado de qualquer lugar.
+
+
+Escopo da Função de Fora (A Casa): Quem está dentro da casa consegue ver o que está na casa e também consegue olhar
+ pela janela e ver o que está no mundo lá fora. Mas quem está lá fora não consegue ver o que tem dentro da casa.
+
+Escopo da Função de Dentro (O Quarto): Quem está no quarto consegue ver as coisas do quarto, as coisas da casa e 
+também olhar pela janela para o mundo. Mas quem está só na casa não pode ver dentro do seu quarto.
+
+A regra principal é: o escopo de dentro consegue acessar as variáveis do escopo de fora, mas o de fora não consegue 
+acessar as de dentro.

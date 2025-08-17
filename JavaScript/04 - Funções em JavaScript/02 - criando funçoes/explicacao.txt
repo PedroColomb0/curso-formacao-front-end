@@ -1,0 +1,82 @@
+Em poucas palavras, uma função é um bloco de código que realiza uma tarefa específica.
+
+Pense nela como uma receita: você escreve os passos (o código) uma única vez, 
+dá um nome a essa receita (o nome da função) e, sempre que quiser o resultado, você simplesmente "chama a receita" 
+pelo nome, em vez de reescrever todos os passos de novo.
+
+Definição simples: Um conjunto de instruções guardado com um nome para ser reutilizado.
+
+---// ----
+
+function minhaFuncao(){
+  console.log("Testando")
+}
+
+minhaFuncao()
+
+// Podemos criar uma função dentro de uma variavel.
+
+const minhaFuncaoEmVariavel = function() {
+  console.log("Em Variavel")
+}
+
+minhaFuncaoEmVariavel();
+
+// Utilizar a opção de const na variavel uma function é por conta a função nao pode ser reescrita, então para nao acontecer a questão de rescrever, mas indifere pode usar a que quiser. seria para ser imutavel por conta da const
+
+function funcaoComParametro(txt){
+  console.log(`Imprimindo ${txt}`)
+}
+
+funcaoComParametro("Bom dia Grupo")
+
+// esse parametro é como uma variavel, qunado for invocarmos, temos que passar o parametro.
+
+
+-------------------- // ----------------------
+
+Claro, aqui está o texto formatado para você colar no seu arquivo `.txt`.
+
+---
+
+### 1. Funcao Padrao
+
+`function minhaFuncao(){`
+`  console.log("Testando")`
+`}`
+
+`minhaFuncao()`
+
+Explicacao:
+Esta e a forma mais comum de criar uma funcao. Voce da um nome a ela (minhaFuncao) e, a
+o chama-la usando `minhaFuncao()`, o codigo dentro dela e executado.
+
+---
+
+### 2. Funcao Dentro de uma Variavel
+
+`const minhaFuncaoEmVariavel = function() {`
+`  console.log("Em Variavel")`
+`}`
+
+`minhaFuncaoEmVariavel();`
+
+Explicacao:
+Aqui, uma funcao sem nome e criada e guardada dentro de uma variavel constante (`minhaFuncaoEmVariavel`).
+ Para executar a funcao, voce chama a variavel como se fosse a funcao. Usar `const` e uma boa pratica para 
+ garantir que a variavel nao seja reescrita.
+
+---
+
+### 3. Funcao com Parametro
+
+`function funcaoComParametro(txt){`
+`  console.log(\`Imprimindo ${txt}\`)`
+`}`
+
+`funcaoComParametro("Bom dia Grupo")`
+
+Explicacao:
+`txt` e um parametro: um valor que a funcao espera receber para poder trabalhar. Quando voce chama a funcao 
+`funcaoComParametro("Bom dia Grupo")`, a string "Bom dia Grupo" (que e o argumento) e passada para o parametro 
+`txt` e usada dentro da funcao.

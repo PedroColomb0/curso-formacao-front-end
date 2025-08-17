@@ -1,0 +1,14 @@
+// Maneira com blocos e return 
+
+const raizQuadrada = (x) => {
+  return x * x
+}
+
+console.log(raizQuadrada(2))
+
+// Agora da maneira a function seguindo o proposito sem escopo de bloco e sem o return
+// Quando a função tem uma linha só utilizamos dessa maneira pra simplificar e deixar o codigo mais limpo
+
+const raizQuadrada2 = (x) => x * x
+
+console.log(raizQuadrada2(4))
