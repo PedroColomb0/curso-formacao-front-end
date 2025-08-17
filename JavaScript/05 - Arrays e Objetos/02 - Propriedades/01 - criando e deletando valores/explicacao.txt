@@ -1,0 +1,5 @@
+car.dorrs = 4
+
+console.log(car)
+
+delete car.km

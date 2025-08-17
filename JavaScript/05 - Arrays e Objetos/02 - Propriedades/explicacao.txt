@@ -1,0 +1,39 @@
+Como informações de um objeto, como se tivesse uma variavel dentro de um objeto que tem informação.
+
+Como se fossem variáveis dentro do objeto
+
+-- // --
+
+Propriedade é a combinação de uma chave (um nome) e um valor (a informação) dentro de um objeto.
+
+A propriedade é nossa chave e temos algumas propriedades que usamos global como o lenght
+
+Pense em um objeto como uma ficha de cadastro. Cada linha da ficha é uma propriedade.
+
+A chave é o título do campo (Ex: "Nome", "Idade", "Cor").
+
+O valor é a informação que você preenche (Ex: "Pedro", 30, "Azul").
+
+Veja no código:
+
+JavaScript
+
+const carro = {
+  // A linha inteira 'marca: "Honda"' é uma PROPRIEDADE.
+  //   - "marca" é a CHAVE.
+  //   - "Honda" é o VALOR.
+  marca: "Honda",
+
+  // 'ano: 2023' é outra PROPRIEDADE.
+  //   - "ano" é a CHAVE.
+  //   - 2023 é o VALOR.
+  ano: 2023,
+
+  // 'ligado: false' é mais uma PROPRIEDADE.
+  //   - "ligado" é a CHAVE.
+  //   - false é o VALOR.
+  ligado: false
+};
+Resumindo:
+Uma propriedade é um item de informação dentro do objeto.
+ É a característica que descreve aquele objeto. A marca, o ano e o estado ligado são as propriedades que descrevem o nosso carro.

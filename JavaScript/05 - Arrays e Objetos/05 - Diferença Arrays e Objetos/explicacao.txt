@@ -1,0 +1,38 @@
+Array melhor usando um tipo de dados
+
+Objetos - Descrever um item, com tipos diferentes
+
+Array de objetos -> Porque geralmente a gnt pega um dado do banco de dados, 
+
+const usuarios = [
+  // Item 0 da lista (primeiro objeto)
+  {
+    id: 1,
+    nome: "Pedro Álvares",
+    email: "pedro.a@exemplo.com",
+    idade: 35,
+    ativo: true
+  },
+
+  // Item 1 da lista (segundo objeto)
+  {
+    id: 2,
+    nome: "Ana Beatriz",
+    email: "ana.b@exemplo.com",
+    idade: 28,
+    ativo: false
+  },
+
+  // Item 2 da lista (terceiro objeto)
+  {
+    id: 3,
+    nome: "Carlos Eduardo",
+    email: "carlos.e@exemplo.com",
+    idade: 42,
+    ativo: true
+  }
+];
+
+seria tipo nosso json uma lista de objetos.
+
+uma lista usuario tem varios objetos dentro.

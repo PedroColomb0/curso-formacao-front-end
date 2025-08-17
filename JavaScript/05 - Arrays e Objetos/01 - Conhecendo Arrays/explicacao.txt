@@ -1,0 +1,11 @@
+Para o JavaScript ao ver o typeof o array é considerado um 
+OBJECT -> Porque temos acesso a métodos e propriedades também, caracterizando a objeto
+
+
+para acessar um item da lista
+
+é 0 based começando com 0
+
+const arr = ["a","b","c","d","e"]
+console.log(arr[0])
+
